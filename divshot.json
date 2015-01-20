@@ -1,0 +1,6 @@
+{
+  "name": "listen-beth-j",
+  "root": "./",
+  "clean_urls": true,
+  "error_page": "error.html"
+}

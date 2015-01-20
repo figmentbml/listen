@@ -1,0 +1,17 @@
+h2 {
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.ui.segment {
+  padding: 10px;
+}
+
+header {
+  background-color: rgba(207, 207, 207, 0.5);
+  padding: 5px;
+  border-bottom: 1px rgba(207, 207, 207, 1) solid;
+}

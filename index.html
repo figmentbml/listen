@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Puck</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="app.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <h2 id="select">Select a song!</h2>
+    </header>
+    <div id="main">
+      <section class="tracks">
+
+
+      </section>
+    </div>
+
+    <script type="text/template" id="tracksTemplate">
+    <article>
+      {{#tracks}}
+      <div class="ui segment">
+        <h2>
+          <i class="fa fa-play"></i>
+          <span class="title">{{title}}</span> by {{artist}}
+          <audio src="/tracks/{{file}}.mp3" preload="none"></audio>
+        </h2>
+      </div>
+      {{/tracks}}
+    </article>
+    </script>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/mustache/mustache.js"></script>
+    <script src= "app.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
