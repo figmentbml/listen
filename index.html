@@ -15,15 +15,15 @@
 
       </section>
     </div>
+    <audio id="player" preload="none"></audio>
 
     <script type="text/template" id="tracksTemplate">
     <article>
       {{#tracks}}
       <div class="ui segment">
         <h2>
-          <i class="fa fa-play"></i>
-          <span class="title">{{title}}</span> by {{artist}}
-          <audio src="/tracks/{{file}}.mp3" preload="none"></audio>
+          <i class="fa fa-play playerButton" id="{{id}}" data-titleArtist="{{title}} by {{artist}}" data-file="{{file}}"></i>
+          <span class="title">{{title}} by {{artist}}</span>
         </h2>
       </div>
       {{/tracks}}
