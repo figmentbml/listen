@@ -5,7 +5,7 @@ $(function (){
   mainEl.on('click', '.fa-play', function() {
     $('.fa-stop').addClass('fa-play').removeClass('fa-stop');
     $(this).removeClass('fa-play').addClass('fa-stop');
-    var file = $(this).parent().children('i').data('file');
+    var file = $(this).data('file');
     playerEl.src = file;
     playerEl.play();
     var song = $(this).parent().children('span.title').text();
